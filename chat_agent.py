@@ -1,4 +1,5 @@
 # FastAPI 서버
+import os
 from pathlib import Path
 from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse, StreamingResponse
