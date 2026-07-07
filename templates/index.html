@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP LangGraph 에이전트</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+    <!-- marked.js 라이브러리 는 마크다운을 HTML로 변환하는 자바스크립트 라이브러리입니다. 
+     에이전트가 반환하는 마크다운 형식의 응답(링크, 리스트, 제목 등)을 
+     보기 좋게 렌더링하는 데 사용합니다. 
+     marked.js 파일은 따로 내려받지 않고 CDN을 통해 로드합니다.
+    -->
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <h1>MCP LangGraph 에이전트</h1>
+
+    <!-- 채팅 메세지 표시 영역 -->
+    <div id="chat-box"></div>
+
+    <!-- 채팅 입력 폼 -->
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="메시지를 입력하세요..." autocomplete="off">
+      <button id="send-button">전송</button>
+    </form>
+
+    <!-- 자바스크립트 파일 -->
+    <script src="../static/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
