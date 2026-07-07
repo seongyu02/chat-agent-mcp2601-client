@@ -78,7 +78,7 @@ async def lifespan(app: FastAPI):
     mcp_server_url = os.getenv("MCP_SERVER_URL", "http://localhost:8000/mcp")
 
     async with streamable_http_client(
-        url = MCP_SERVER_URL,
+        url = mcp_server_url,
         http_client=http_client,
     ) as (read, write, _):
         async with ClientSession(read, write) as session:
